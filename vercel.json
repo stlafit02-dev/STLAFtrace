@@ -14,6 +14,21 @@
     {
       "source": "/",
       "destination": "/filetrace.html"
+    },
+    {
+      "source": "/scan",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": ".*(Android|iPhone|iPod|IEMobile|BlackBerry|Opera Mini|Mobile).*"
+        }
+      ],
+      "destination": "/filetrace_mobile.html"
+    },
+    {
+      "source": "/scan",
+      "destination": "/filetrace.html"
     }
   ]
 }
